@@ -11,9 +11,26 @@
 <body>
     <header id="top">
         <h1>Class Test Playground</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#test-area-one">Test area one</a>
+                </li>
+                <li>
+                    <a href="#test-area-two">Test area two</a>
+                </li>
+                <li>
+                    <a href="#contact-us">Contact us!</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="card" id="description-section">
+        <figure>
+            <img src="./assets/Images/Main-image.jpg" class="img1" alt="Image of code on a screen">
+            <figcaption>Code on a screen</figcaption>
+        </figure>
+        <section class="card" id="test-area-one">
            <h2>What this is for:</h2>
             <ul>
                <li>Testing new ideas with code.</li>
@@ -21,11 +38,30 @@
                <li>A safe place to make mistakes while taking risks.</li>
            </ul>
         </section>
-        <section class="card" id="testing-section">
+        <section class="card" id="test-area-two">
             <h2>Testing for different types of html</h2>
             <p>Testing here</p>
             <blockquote>Testing the blockquote here.</blockquote>
         </section>
+        <form id="contact-us">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" value="Enter your name here"/>
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" value="Enter your email here" />
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message">Enter your message here...</textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send</button>
+                </li>
+            </ul>
+        </form>
     </main>
 </body>
 <footer>
